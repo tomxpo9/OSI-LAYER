@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="tom7layer.css">
+    <title>NETWORK LAYER BY TOM7</title>
+</head>
+<body>
+    <div class="cyber-bg"></div>
+    <div class="matrix-rain" id="matrixRain"></div>
+    <div class="scan-line"></div>
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Navbar -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo"><i class="fas fa-network-wired"></i> NETWORKS OSI LAYERS BY TOM7</div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#layer1" class="active">LAYER 1</a></li>
+                <li><a href="#layer2">LAYER 2</a></li>
+                <li><a href="#layer3">LAYER 3</a></li>
+                <li><a href="#layer4">LAYER 4</a></li>
+                <li><a href="#layer5">LAYER 5</a></li>
+                <li><a href="#layer6">LAYER 6</a></li>
+                <li><a href="#layer7">LAYER 7</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <h1><i class="fas fa-wifi"></i> NETWORK OSI LAYERS BY TOM7</h1>
+        <p class="subtitle">[ 7-LAYER HOLOGRAPHIC DATABASE SYSTEM BY TOM7 ]</p>
+    </header>
+
+    <div class="container">
+        <!-- LAYER 1: Physical Layer -->
+        <section id="layer1" class="layer-section">
+            <div class="layer-title">
+                <div class="layer-number">01</div>
+                <h2><i class="fas fa-plug"></i> LAYER 1 - PHYSICAL</h2>
+            </div>
+            <div class="cards-grid">
+                <div class="network-card">
+                    <div class="card-icon"><i class="fas fa-ethernet"></i></div>
+                    <div class="card-title">
+                        <h3>Ethernet Cable</h3>
+                        <p class="card-type">Wired Physical Medium</p>
+                    </div>
+                    <div class="card-content">
+                        <p>Kabel Ethernet adalah media fisik yang digunakan untuk menghubungkan perangkat dalam jaringan. Menggunakan twisted pair copper wires untuk mentransmisikan sinyal listrik yang merepresentasikan data digital.</p>
+                        <div class="card-specs">
+                            <div><i class="fas fa-check-circle"></i> <strong>Tipe:</strong> Cat5e, Cat6, Cat6a, Cat7, Cat8</div>
+                            <div><i class="fas fa-tachometer-alt"></i> <strong>Kecepatan:</strong> 100 Mbps - 40 Gbps</div>
+                            <div><i class="fas fa-ruler"></i> <strong>Jarak:</strong> Hingga 100 meter</div>
+                            <div><i class="fas fa-cog"></i> <strong>Standar:</strong> IEEE 802.3</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="network-card">
+                    <div class="card-icon"><i class="fas fa-compact-disc"></i></div>
+                    <div class="card-title">
+                        <h3>Fiber Optic</h3>
+                        <p class="card-type">High-Speed Optical Medium</p>
+                    </div>
+                    <div class="card-content">
+                        <p>Fiber optik menggunakan serat kaca atau plastik untuk mentransmisikan data dalam bentuk pulsa cahaya. Menawarkan bandwidth sangat tinggi dan imun terhadap interferensi elektromagnetik.</p>
+                        <div class="card-specs">
+                            <div><i class="fas fa-check-circle"></i> <strong>Tipe:</strong> Single-mode, Multi-mode</div>
+                            <div><i class="fas fa-tachometer-alt"></i> <strong>Kecepatan:</strong> Hingga 100 Gbps+</div>
+                            <div><i class="fas fa-ruler"></i> <strong>Jarak:</strong> Hingga 100+ km</div>
+                            <div><i class="fas fa-shield-alt"></i> <strong>Keunggulan:</strong> Bandwidth tinggi, jarak jauh</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="network-card">
+                    <div class="card-icon"><i class="fas fa-wifi"></i></div>
+                    <div class="card-title">
+                        <h3>Wireless Radio Waves</h3>
+                        <p class="card-type">Wireless Physical Medium</p>
+                    </div>
+                    <div class="card-content">
+                        <p>Gelombang radio digunakan untuk transmisi data nirkabel. Menggunakan spektrum frekuensi radio untuk mengirimkan sinyal data antar perangkat tanpa kabel fisik.</p>
+                        <div class="card-specs">
+                            <div><i class="fas fa-check-circle"></i> <strong>Frekuensi:</strong> 2.4 GHz, 5 GHz, 6 GHz</div>
+                            <div><i class="fas fa-tachometer-alt"></i> <strong>Standar:</strong> 802.11a/b/g/n/ac/ax</div>
+                            <div><i class="fas fa-ruler"></i> <strong>Jarak:</strong> 30-100 meter indoor</div>
+                            <div><i class="fas fa-signal"></i> <strong>Kecepatan:</strong> 11 Mbps - 9.6 Gbps</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="network-card">
+                    <div class="card-icon"><i class="fas fa-hdd"></i></div>
+                    <div class="card-title">
+                        <h3>Network Interface Card (NIC)</h3>
+                        <p class="card-type">Hardware Interface</p>
+                    </div>
+                    <div class="card-content">
+                        <p>NIC adalah hardware yang memungkinkan komputer terhubung ke jaringan. Bertanggung jawab mengkonversi data digital menjadi sinyal yang dapat ditransmisikan melalui media fisik.</p>
+                        <div class="card-specs">
+                            <div><i class="fas fa-check-circle"></i> <strong>Tipe:</strong> Ethernet, Wireless, Fiber</div>
+                            <div><i class="fas fa-microchip"></i> <strong>Interface:</strong> PCI, PCIe, USB</div>
+                            <div><i class="fas fa-tachometer-alt"></i> <strong>Kecepatan:</strong> 10/100/1000 Mbps, 10 Gbps</div>
+                            <div><i class="fas fa-fingerprint"></i> <strong>Identifier:</strong> MAC Address</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="network-card">
+                    <div class="card-icon"><i class="fas fa-circle-notch"></i></div>
+                    <div class="card-title">
+                        <h3>Repeater</h3>
+                        <p class="card-type">Signal Amplifier</p>
+                    </div>
+                    <div class="card-content">
+                        <p>Repeater adalah perangkat yang menerima sinyal, memperkuatnya, dan mentransmisikan kembali untuk memperpanjang jarak transmisi. Bekerja di layer physical untuk regenerasi sinyal.</p>
+                        <div class="card-specs">
+                            <div><i class="fas fa-check-circle"></i> <strong>Fungsi:</strong> Amplifikasi sinyal</div>
+                            <div><i class="fas fa-expand-arrows-alt"></i> <strong>Kegunaan:</strong> Perpanjangan jarak</div>
+                            <div><i class="fas fa-layer-group"></i> <strong>OSI Layer:</strong> Layer 1</div>
+                            <div><i class="fas fa-sync"></i> <strong>Operasi:</strong> Regenerasi sinyal</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="network-card">
+                    <div class="card-icon"><i class="fas fa-project-diagram"></i></div>
+                    <div class="card-title">
+                        <h3>Hub</h3>
+                        <p class="card-type">Multi-port Repeater</p>
+                    </div>
+                    <div class="card-content">
+                        <p>Hub adalah perangkat yang menghubungkan beberapa komputer dalam jaringan. Bekerja dengan menyiarkan data yang diterima ke semua port, tanpa filtering atau routing.</p>
+                        <div class="card-specs">
+                            <div><i class="fas fa-check-circle"></i> <strong>Tipe:</strong> Passive, Active, Intelligent</div>
+                            <div><i class="fas fa-broadcast-tower"></i> <strong>Operasi:</strong> Broadcast ke semua port</div>
+                            <div><i class="fas fa-plug"></i> <strong>Port:</strong> 4, 8, 16, 24 port</div>
+                            <div><i class="fas fa-exclamation-triangle"></i> <strong>Collision:</strong> Collision domain shared</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- LAYER 2: Data Link Layer -->
+        <section id="layer2" class="layer-section">
+            <div class="layer-title">
+                <div class="layer-number">02</div>
+                <h2><i class="fas fa-link"></i> LAYER 2 - DATA LINK</h2>
+            </div>
+            <div class="cards-grid">
+                <div class="network-card">
+                    <div class="card-icon"><i class="fas fa-exchange-alt"></i></div>
+                    <div class="card-title">
+                        <h3>Switch</h3>
+                        <p class="card-type">Intelligent Network Device</p>
+                    </div>
+                    <div class="card-content">
+                        <p>Switch adalah perangkat jaringan yang beroperasi di layer 2 OSI. Menggunakan MAC address untuk meneruskan frame data hanya ke port tujuan yang tepat, meningkatkan efisiensi dan keamanan jaringan.</p>
+                        <div class="card-specs">
+                            <div><i class="fas fa-check-circle"></i> <strong>Tipe:</strong> Managed, Unmanaged, Smart</div>
+                            <div><i class="fas fa-table"></i> <strong>MAC Table:</strong> MAC address learning</div>
+                            <div><i class="fas fa-tachometer-alt"></i> <strong>Speed:</strong> Gigabit, 10 Gigabit</div>
+                            <div><i class="fas fa-shield-alt"></i> <strong>VLAN:</strong> Virtual LAN support</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="network-card">
+                    <div class="card-icon"><i class="fas fa-network-wired"></i></div>
+                    <div class="card-title">
+                        <h3>Bridge</h3>
+                        <p class="card-type">Network Segment Connector</p>
+                    </div>
+                    <div class="card-content">
+                        <p>Bridge menghubungkan dua atau lebih segmen jaringan menjadi satu jaringan logis. Memfilter traffic berdasarkan MAC address untuk mengurangi collision domain.</p>
+                        <div class="card-specs">
+                            <div><i class="fas fa-check-circle"></i> <strong>Fungsi:</strong> Segmentasi jaringan</div>
+                            <div><i class="fas fa-filter"></i> <strong>Filtering:</strong> MAC-based filtering</div>
+                            <div><i class="fas fa-divide"></i> <strong>Collision:</strong> Memisahkan collision domain</div>
+                            <div><i class="fas fa-layer-group"></i> <strong>Layer:</strong> Data Link Layer</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="network-card">
+                    <div class="card-icon"><i class="fas fa-id-card"></i></div>
+                    <div class="card-title">
+                        <h3>MAC Address</h3>
+                        <p class="card-type">Physical Address</p>
+                    </div>
+                    <div class="card-content">
+                        <p>MAC (Media Access Control) Address adalah alamat hardware unik yang diassign ke setiap network interface card. Terdiri dari 48-bit (6 bytes) yang ditulis dalam format hexadecimal.</p>
+                        <div class="card-specs">
+                            <div><i class="fas fa-check-circle"></i> <strong>Format:</strong> XX:XX:XX:XX:XX:XX</div>
+                            <div><i class="fas fa-fingerprint"></i> <strong>Uniqueness:</strong> Globally unique</div>
+                            <div><i class="fas fa-industry"></i> <strong>OUI:</strong> Vendor identification</div>
+                            <div><i class="fas fa-lock"></i> <strong>Keamanan:</strong> MAC filtering</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="network-card">
+                    <div class="card-icon"><i class="fas fa-sitemap"></i></div>
+                    <div class="card-title">
+                        <h3>VLAN (Virtual LAN)</h3>
+                        <p class="card-type">Logical Network Segmentation</p>
+                    </div>
+                    <div class="card-content">
+                        <p>VLAN adalah teknologi yang memungkinkan segmentasi jaringan secara logis pada level switch. Memungkinkan pemisahan broadcast domain tanpa perlu hardware tambahan.</p>
+                        <div class="card-specs">
+                            <div><i class="fas fa-check-circle"></i> <strong>Standar:</strong> IEEE 802.1Q</div>
+                            <div><i class="fas fa-divide"></i> <strong>Segmentasi:</strong> Logical separation</div>
+                            <div><i class="fas fa-shield-alt"></i> <strong>Keamanan:</strong> Traffic isolation</div>
+                            <div><i class="fas fa-hashtag"></i> <strong>VLAN ID:</strong> 1-4094</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="network-card">
+                    <div class="card-icon"><i class="fas fa-code-branch"></i></div>
+                    <div class="card-title">
+                        <h3>STP (Spanning Tree Protocol)</h3>
+                        <p class="card-type">Loop Prevention Protocol</p>
+                    </div>
+                    <div class="card-content">
+                        <p>STP adalah protokol yang mencegah terjadinya switching loop dalam jaringan. Secara otomatis mendeteksi dan menonaktifkan jalur redundan untuk menghindari broadcast storm.</p>
+                        <div class="card-specs">
+                            <div><i class="fas fa-check-circle"></i> <strong>Standar:</strong> IEEE 802.1D</div>
+                            <div><i class="fas fa-shield-alt"></i> <strong>Fungsi:</strong> Loop prevention</div>
+                            <div><i class="fas fa-sync"></i> <strong>Variants:</strong> RSTP, MSTP</div>
+                            <div><i class="fas fa-crown"></i> <strong>Root Bridge:</strong> Election algorithm</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="network-card">
+                    <div class="card-icon"><i class="fas fa-boxes"></i></div>
+                    <div class="card-title">
+                        <h3>Frame</h3>
+                        <p class="card-type">Data Link Layer PDU</p>
+                    </div>
+                    <div class="card-content">
+                        <p>Frame adalah Protocol Data Unit (PDU) pada layer 2. Mengenkapsulasi packet dari layer 3 dengan menambahkan header (MAC source & destination) dan trailer (FCS untuk error checking).</p>
+                        <div class="card-specs">
+                            <div><i class="fas fa-check-circle"></i> <strong>Komponen:</strong> Header, Payload, Trailer</div>
+                            <div><i class="fas fa-ruler"></i> <strong>Size:</strong> 64 - 1518 bytes</div>
+                            <div><i class="fas fa-check-double"></i> <strong>FCS:</strong> Error detection</div>
+                            <div><i class="fas fa-envelope"></i> <strong>Encapsulation:</strong> Layer 3 packets</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- LAYER 3: Network Layer -->
+        <section id="layer3" class="layer-section">
+            <div class="layer-title">
+                <div class="layer-number">03</div>
+                <h2><i class="fas fa-globe"></i> LAYER 3 - NETWORK</h2>
+            </div>
+            <div class="cards-grid">
+                <div class="network-card">
+                    <div class="card-icon"><i class="fas fa-route"></i></div>
+                    <div class="card-title">
+                        <h3>Router</h3>
+                        <p class="card-type">Network Gateway Device</p>
+                    </div>
+                    <div class="card-content">
+                        <p>Router adalah perangkat yang menghubungkan berbagai jaringan dan menentukan jalur terbaik untuk pengiriman data. Bekerja di layer 3 menggunakan IP address untuk routing decisions.</p>
+                        <div class="card-specs">
+                            <div><i class="fas fa-check-circle"></i> <strong>Fungsi:</strong> Inter-network routing</div>
+                            <div><i class="fas fa-map-marked-alt"></i> <strong>Routing:</strong> Static, Dynamic</div>
+                            <div><i class="fas fa-shield-alt"></i> <strong>Firewall:</strong> Built-in security</div>
+                            <div><i class="fas fa-network-wired"></i> <strong>NAT:</strong> Address translation</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="network-card">
+                    <div class="card-icon"><i class="fas fa-map-pin"></i></div>
+                    <div class="card-title">
+                        <h3>IP Address</h3>
+                        <p class="card-type">Logical Network Address</p>
+                    </div>
+                    <div class="card-content">
+                        <p>IP Address adalah alamat logis yang digunakan untuk mengidentifikasi perangkat dalam jaringan. Tersedia dalam dua versi: IPv4 (32-bit) dan IPv6 (128-bit).</p>
+                        <div class="card-specs">
+                            <div><i class="fas fa-check-circle"></i> <strong>IPv4:</strong> 192.168.1.1 (32-bit)</div>
+                            <div><i class="fas fa-check-circle"></i> <strong>IPv6:</strong> 2001:db8::1 (128-bit)</div>
+                            <div><i class="fas fa-layer-group"></i> <strong>Classes:</strong> A, B, C, D, E</div>
+                            <div><i class="fas fa-user-lock"></i> <strong>Private:</strong> 10.x, 172.16.x, 192.168.x</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="network-card">
+                    <div class="card-icon"><i class="fas fa-envelope-open-text"></i></div>
+                    <div class="card-title">
+                        <h3>ICMP</h3>
+                        <p class="card-type">Internet Control Message Protocol</p>
+                    </div>
+                    <div class="card-content">
+                        <p>ICMP digunakan untuk mengirim pesan error dan informasi operasional tentang jaringan. Paling sering digunakan melalui utility ping dan traceroute untuk network troubleshooting.</p>
+                        <div class="card-specs">
+                            <div><i class="fas fa-check-circle"></i> <strong>Protocol:</strong> Network layer</div>
+                            <div><i class="fas fa-heartbeat"></i> <strong>Ping:</strong> Echo request/reply</div>
+                            <div><i class="fas fa-road"></i> <strong>Traceroute:</strong> Path discovery</div>
+                            <div><i class="fas fa-exclamation-triangle"></i> <strong>Messages:</strong> Error reporting</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="network-card">
+                    <div class="card-icon"><i class="fas fa-directions"></i></div>
+                    <div class="card-title">
+                        <h3>Routing Protocols</h3>
+                        <p class="card-type">Dynamic Path Selection</p>
+                    </div>
+                    <div class="card-content">
+                        <p>Routing protocols memungkinkan router untuk saling berbagi informasi routing dan menentukan jalur terbaik secara dinamis. Termasuk RIP, OSPF, EIGRP, dan BGP.</p>
+                        <div class="card-specs">
+                            <div><i class="fas fa-check-circle"></i> <strong>RIP:</strong> Distance vector, hop count</div>
+                            <div><i class="fas fa-check-circle"></i> <strong>OSPF:</strong> Link state, area-based</div>
+                            <div><i class="fas fa-check-circle"></i> <strong>BGP:</strong> Path vector, Internet routing</div>
+                            <div><i class="fas fa-sync-alt"></i> <strong>Updates:</strong> Automatic convergence</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="network-card">
+                    <div class="card-icon"><i class="fas fa-cube"></i></div>
+                    <div class="card-title">
+                        <h3>Packet</h3>
+                        <p class="card-type">Network Layer PDU</p>
+                    </div>
+                    <div class="card-content">
+                        <p>Packet adalah unit data pada network layer yang berisi IP header dan payload dari layer transport. Header mencakup source dan destination IP address serta informasi routing.</p>
+                        <div class="card-specs">
+                            <div><i class="fas fa-check-circle"></i> <strong>Header:</strong> Source/Dest IP, TTL, Protocol</div>
+                            <div><i class="fas fa-hourglass-half"></i> <strong>TTL:</strong> Time To Live</div>
+                            <div><i class="fas fa-cubes"></i> <strong>Fragmentation:</strong> MTU handling</div>
+                            <div><i class="fas fa-shield-alt"></i> <strong>Checksum:</strong> Header integrity</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="network-card">
+                    <div class="card-icon"><i class="fas fa-layer-group"></i></div>
+                    <div class="card-title">
+                        <h3>Layer 3 Switch</h3>
+                        <p class="card-type">Multilayer Switch</p>
+                    </div>
+                    <div class="card-content">
+                        <p>Layer 3 Switch menggabungkan fungsi switch dan router dalam satu perangkat. Dapat melakukan switching di layer 2 dan routing di layer 3 dengan hardware acceleration.</p>
+                        <div class="card-specs">
+                            <div><i class="fas fa-check-circle"></i> <strong>Fungsi:</strong> Switching + Routing</div>
+                            <div><i class="fas fa-tachometer-alt"></i> <strong>Speed:</strong> Wire-speed routing</div>
+                            <div><i class="fas fa-sitemap"></i> <strong>VLAN:</strong> Inter-VLAN routing</div>
+                            <div><i class="fas fa-microchip"></i> <strong>ASIC:</strong> Hardware-based</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- LAYER 4: Transport Layer -->
+        <section id="layer4" class="layer-section">
+            <div class="layer-title">
+                <div class="layer-number">04</div>
+                <h2><i class="fas fa-truck"></i> LAYER 4 - TRANSPORT</h2>
+            </div>
+            <div class="cards-grid">
+                <div class="network-card">
+                    <div class="card-icon"><i class="fas fa-handshake"></i></div>
+                    <div class="card-title">
+                        <h3>TCP</h3>
+                        <p class="card-type">Transmission Control Protocol</p>
+                    </div>
+                    <div class="card-content">
+                        <p>TCP adalah protokol transport yang connection-oriented dan reliable. Menjamin pengiriman data yang terurut dan bebas error melalui mekanisme acknowledgment dan retransmission.</p>
+                        <div class="card-specs">
+                            <div><i class="fas fa-check-circle"></i> <strong>Type:</strong> Connection-oriented</div>
+                            <div><i class="fas fa-shield-alt"></i> <strong>Reliable:</strong> Error checking & recovery</div>
+                            <div><i class="fas fa-sort-amount-down"></i> <strong>Flow Control:</strong> Windowing</div>
+                            <div><i class="fas fa-plug"></i> <strong>Ports:</strong> 0-65535</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="network-card">
+                    <div class="card-icon"><i class="fas fa-paper-plane"></i></div>
+                    <div class="card-title">
+                        <h3>UDP</h3>
+                        <p class="card-type">User Datagram Protocol</p>
+                    </div>
+                    <div class="card-content">
+                        <p>UDP adalah protokol transport connectionless yang tidak menjamin pengiriman data. Lebih cepat daripada TCP karena tidak ada overhead untuk connection establishment dan error checking.</p>
+                        <div class="card-specs">
+                            <div><i class="fas fa-check-circle"></i> <strong>Type:</strong> Connectionless</div>
+                            <div><i class="fas fa-bolt"></i> <strong>Speed:</strong> Fast, low latency</div>
+                            <div><i class="fas fa-times-circle"></i> <strong>Unreliable:</strong> Best-effort delivery</div>
+                            <div><i class="fas fa-video"></i> <strong>Use Case:</strong> Streaming, gaming, VoIP</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="network-card">
+                    <div class="card-icon"><i class="fas fa-door-open"></i></div>
+                    <div class="card-title">
+                        <h3>Port Numbers</h3>
+                        <p class="card-type">Service Identifiers</p>
+                    </div>
+                    <div class="card-content">
+                        <p>Port numbers digunakan untuk mengidentifikasi aplikasi atau service spesifik yang berjalan pada host. Range: 0-65535, dibagi menjadi well-known (0-1023), registered (1024-49151), dan dynamic (49152-65535).</p>
+                        <div class="card-specs">
+                            <div><i class="fas fa-check-circle"></i> <strong>HTTP:</strong> Port 80</div>
+                            <div><i class="fas fa-check-circle"></i> <strong>HTTPS:</strong> Port 443</div>
+                            <div><i class="fas fa-check-circle"></i> <strong>FTP:</strong> Port 21</div>
+                            <div><i class="fas fa-check-circle"></i> <strong>SSH:</strong> Port 22</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="network-card">
+                    <div class="card-icon"><i class="fas fa-compress"></i></div>
+                    <div class="card-title">
+                        <h3>Segment</h3>
+                        <p class="card-type">Transport Layer PDU</p>
+                    </div>
+                    <div class="card-content">
+                        <p>Segment adalah unit data pada transport layer (TCP). Berisi TCP/UDP header dengan port numbers, sequence numbers, dan data dari application layer.</p>
+                        <div class="card-specs">
+                            <div><i class="fas fa-check-circle"></i> <strong>Header:</strong> Source/Dest ports</div>
+                            <div><i class="fas fa-sort-numeric-up"></i> <strong>Sequence:</strong> Ordered delivery (TCP)</div>
+                            <div><i class="fas fa-check-double"></i> <strong>ACK:</strong> Acknowledgment (TCP)</div>
+                            <div><i class="fas fa-expand-arrows-alt"></i> <strong>Window:</strong> Flow control</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="network-card">
+                    <div class="card-icon"><i class="fas fa-sync-alt"></i></div>
+                    <div class="card-title">
+                        <h3>Three-Way Handshake</h3>
+                        <p class="card-type">TCP Connection Establishment</p>
+                    </div>
+                    <div class="card-content">
+                        <p>Three-way handshake adalah proses yang digunakan TCP untuk membuat koneksi. Melibatkan exchange SYN, SYN-ACK, dan ACK packets untuk establish reliable connection.</p>
+                        <div class="card-specs">
+                            <div><i class="fas fa-check-circle"></i> <strong>Step 1:</strong> Client → SYN</div>
+                            <div><i class="fas fa-check-circle"></i> <strong>Step 2:</strong> Server → SYN-ACK</div>
+                            <div><i class="fas fa-check-circle"></i> <strong>Step 3:</strong> Client → ACK</div>
+                            <div><i class="fas fa-link"></i> <strong>Result:</strong> Connection established</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="network-card">
+                    <div class="card-icon"><i class="fas fa-balance-scale"></i></div>
+                    <div class="card-title">
+                        <h3>Load Balancer</h3>
+                        <p class="card-type">Traffic Distribution</p>
+                    </div>
+                    <div class="card-content">
+                        <p>Load Balancer mendistribusikan traffic jaringan ke multiple servers untuk meningkatkan reliability, performance, dan scalability aplikasi.</p>
+                        <div class="card-specs">
+                            <div><i class="fas fa-check-circle"></i> <strong>Layer:</strong> Layer 4 (Transport)</div>
+                            <div><i class="fas fa-random"></i> <strong>Algorithm:</strong> Round-robin, least connections</div>
+                            <div><i class="fas fa-heartbeat"></i> <strong>Health Check:</strong> Server monitoring</div>
+                            <div><i class="fas fa-expand"></i> <strong>Scalability:</strong> Horizontal scaling</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- LAYER 5: Session Layer -->
+        <section id="layer5" class="layer-section">
+            <div class="layer-title">
+                <div class="layer-number">05</div>
+                <h2><i class="fas fa-comments"></i> LAYER 5 - SESSION</h2>
+            </div>
+            <div class="cards-grid">
+                <div class="network-card">
+                    <div class="card-icon"><i class="fas fa-users-cog"></i></div>
+                    <div class="card-title">
+                        <h3>NetBIOS</h3>
+                        <p class="card-type">Network Basic Input/Output System</p>
+                    </div>
+                    <div class="card-content">
+                        <p>NetBIOS menyediakan services untuk session layer yang memungkinkan aplikasi pada komputer berbeda untuk berkomunikasi dalam LAN. Digunakan untuk name resolution dan session management.</p>
+                        <div class="card-specs">
+                            <div><i class="fas fa-check-circle"></i> <strong>Services:</strong> Name, Session, Datagram</div>
+                            <div><i class="fas fa-network-wired"></i> <strong>Ports:</strong> 137, 138, 139</div>
+                            <div><i class="fas fa-signature"></i> <strong>Names:</strong> 15-character limit</div>
+                            <div><i class="fas fa-desktop"></i> <strong>Platform:</strong> Windows networking</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="network-card">
+                    <div class="card-icon"><i class="fas fa-phone-alt"></i></div>
+                    <div class="card-title">
+                        <h3>RPC</h3>
+                        <p class="card-type">Remote Procedure Call</p>
+                    </div>
+                    <div class="card-content">
+                        <p>RPC memungkinkan program untuk execute procedure di komputer remote seolah-olah adalah local procedure call. Menyembunyikan kompleksitas network communication dari developer.</p>
+                        <div class="card-specs">
+                            <div><i class="fas fa-check-circle"></i> <strong>Type:</strong> Request-response protocol</div>
+                            <div><i class="fas fa-code"></i> <strong>Implementation:</strong> gRPC, XML-RPC</div>
+                            <div><i class="fas fa-server"></i> <strong>Use Case:</strong> Distributed systems</div>
+                            <div><i class="fas fa-exchange-alt"></i> <strong>Communication:</strong> Synchronous</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="network-card">
+                    <div class="card-icon"><i class="fas fa-ticket-alt"></i></div>
+                    <div class="card-title">
+                        <h3>Session Token</h3>
+                        <p class="card-type">Session Authentication</p>
+                    </div>
+                    <div class="card-content">
+                        <p>Session token adalah identifier unik yang digunakan untuk maintain state antara client dan server dalam stateless protocols seperti HTTP. Digunakan untuk authentication dan authorization.</p>
+                        <div class="card-specs">
+                            <div><i class="fas fa-check-circle"></i> <strong>Type:</strong> Cookie-based, Token-based</div>
+                            <div><i class="fas fa-lock"></i> <strong>Security:</strong> Encrypted, signed</div>
+                            <div><i class="fas fa-clock"></i> <strong>Expiration:</strong> Time-limited</div>
+                            <div><i class="fas fa-key"></i> <strong>Format:</strong> JWT, Session ID</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="network-card">
+                    <div class="card-icon"><i class="fas fa-server"></i></div>
+                    <div class="card-title">
+                        <h3>PPTP</h3>
+                        <p class="card-type">Point-to-Point Tunneling Protocol</p>
+                    </div>
+                    <div class="card-content">
+                        <p>PPTP adalah protokol yang digunakan untuk implement VPN. Beroperasi di session layer untuk membuat secure tunnel antara client dan server melalui Internet.</p>
+                        <div class="card-specs">
+                            <div><i class="fas fa-check-circle"></i> <strong>Port:</strong> TCP 1723</div>
+                            <div><i class="fas fa-shield-alt"></i> <strong>Security:</strong> MPPE encryption</div>
+                            <div><i class="fas fa-network-wired"></i> <strong>Protocol:</strong> GRE tunneling</div>
+                            <div><i class="fas fa-bolt"></i> <strong>Speed:</strong> Fast, low overhead</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="network-card">
+                    <div class="card-icon"><i class="fas fa-plug"></i></div>
+                    <div class="card-title">
+                        <h3>Sockets API</h3>
+                        <p class="card-type">Programming Interface</p>
+                    </div>
+                    <div class="card-content">
+                        <p>Sockets API menyediakan interface untuk aplikasi berkomunikasi melalui jaringan. Abstraksi yang memungkinkan programmer membuat network applications tanpa menangani low-level details.</p>
+                        <div class="card-specs">
+                            <div><i class="fas fa-check-circle"></i> <strong>Types:</strong> Stream (TCP), Datagram (UDP)</div>
+                            <div><i class="fas fa-code"></i> <strong>Functions:</strong> bind(), listen(), accept()</div>
+                            <div><i class="fas fa-layer-group"></i> <strong>Layer:</strong> Transport + Session</div>
+                            <div><i class="fas fa-laptop-code"></i> <strong>Platform:</strong> Cross-platform</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="network-card">
+                    <div class="card-icon"><i class="fas fa-handshake-alt"></i></div>
+                    <div class="card-title">
+                        <h3>SIP</h3>
+                        <p class="card-type">Session Initiation Protocol</p>
+                    </div>
+                    <div class="card-content">
+                        <p>SIP adalah signaling protocol untuk initiating, maintaining, dan terminating real-time sessions untuk voice, video, dan messaging applications.</p>
+                        <div class="card-specs">
+                            <div><i class="fas fa-check-circle"></i> <strong>Port:</strong> 5060 (UDP/TCP), 5061 (TLS)</div>
+                            <div><i class="fas fa-phone"></i> <strong>Use Case:</strong> VoIP, video calls</div>
+                            <div><i class="fas fa-comments"></i> <strong>Messages:</strong> INVITE, ACK, BYE</div>
+                            <div><i class="fas fa-network-wired"></i> <strong>Architecture:</strong> Client-server</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- LAYER 6: Presentation Layer -->
+        <section id="layer6" class="layer-section">
+            <div class="layer-title">
+                <div class="layer-number">06</div>
+                <h2><i class="fas fa-palette"></i> LAYER 6 - PRESENTATION</h2>
+            </div>
+            <div class="cards-grid">
+                <div class="network-card">
+                    <div class="card-icon"><i class="fas fa-lock"></i></div>
+                    <div class="card-title">
+                        <h3>SSL/TLS</h3>
+                        <p class="card-type">Encryption Protocol</p>
+                    </div>
+                    <div class="card-content">
+                        <p>SSL (Secure Sockets Layer) dan TLS (Transport Layer Security) adalah cryptographic protocols yang menyediakan secure communication melalui network. TLS adalah successor dari SSL.</p>
+                        <div class="card-specs">
+                            <div><i class="fas fa-check-circle"></i> <strong>Version:</strong> TLS 1.2, TLS 1.3</div>
+                            <div><i class="fas fa-shield-alt"></i> <strong>Encryption:</strong> AES, ChaCha20</div>
+                            <div><i class="fas fa-certificate"></i> <strong>Certificate:</strong> X.509</div>
+                            <div><i class="fas fa-handshake"></i> <strong>Handshake:</strong> Key exchange</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="network-card">
+                    <div class="card-icon"><i class="fas fa-file-code"></i></div>
+                    <div class="card-title">
+                        <h3>Data Encoding</h3>
+                        <p class="card-type">Format Conversion</p>
+                    </div>
+                    <div class="card-content">
+                        <p>Presentation layer bertanggung jawab untuk encoding dan decoding data. Mengkonversi data dari application format ke network format dan sebaliknya.</p>
+                        <div class="card-specs">
+                            <div><i class="fas fa-check-circle"></i> <strong>Formats:</strong> ASCII, EBCDIC, Unicode</div>
+                            <div><i class="fas fa-compress"></i> <strong>Compression:</strong> GZIP, DEFLATE</div>
+                            <div><i class="fas fa-code"></i> <strong>Serialization:</strong> JSON, XML, Protocol Buffers</div>
+                            <div><i class="fas fa-language"></i> <strong>Character Sets:</strong> UTF-8, UTF-16</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="network-card">
+                    <div class="card-icon"><i class="fas fa-key"></i></div>
+                    <div class="card-title">
+                        <h3>Encryption/Decryption</h3>
+                        <p class="card-type">Data Security</p>
+                    </div>
+                    <div class="card-content">
+                        <p>Presentation layer handle encryption dan decryption untuk mengamankan data transmission. Menggunakan cryptographic algorithms untuk protect data confidentiality dan integrity.</p>
+                        <div class="card-specs">
+                            <div><i class="fas fa-check-circle"></i> <strong>Symmetric:</strong> AES, DES, 3DES</div>
+                            <div><i class="fas fa-check-circle"></i> <strong>Asymmetric:</strong> RSA, ECC</div>
+                            <div><i class="fas fa-shield-alt"></i> <strong>Hash:</strong> SHA-256, MD5</div>
+                            <div><i class="fas fa-key"></i> <strong>Key Exchange:</strong> Diffie-Hellman</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="network-card">
+                    <div class="card-icon"><i class="fas fa-compress-arrows-alt"></i></div>
+                    <div class="card-title">
+                        <h3>Data Compression</h3>
+                        <p class="card-type">Bandwidth Optimization</p>
+                    </div>
+                    <div class="card-content">
+                        <p>Compression mengurangi size data yang ditransmisikan melalui network. Meningkatkan efficiency bandwidth dan mempercepat transfer speed tanpa data loss.</p>
+                        <div class="card-specs">
+                            <div><i class="fas fa-check-circle"></i> <strong>Lossless:</strong> ZIP, GZIP, LZ77</div>
+                            <div><i class="fas fa-check-circle"></i> <strong>Lossy:</strong> JPEG, MP3, H.264</div>
+                            <div><i class="fas fa-tachometer-alt"></i> <strong>Ratio:</strong> 50-90% reduction</div>
+                            <div><i class="fas fa-bolt"></i> <strong>Speed:</strong> Real-time compression</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="network-card">
+                    <div class="card-icon"><i class="fas fa-file-alt"></i></div>
+                    <div class="card-title">
+                        <h3>MIME</h3>
+                        <p class="card-type">Multipurpose Internet Mail Extensions</p>
+                    </div>
+                    <div class="card-content">
+                        <p>MIME adalah standard untuk format email messages dan HTTP content. Mendefinisikan content types dan encoding untuk berbagai jenis file dan data.</p>
+                        <div class="card-specs">
+                            <div><i class="fas fa-check-circle"></i> <strong>Types:</strong> text/html, image/png, video/mp4</div>
+                            <div><i class="fas fa-envelope"></i> <strong>Email:</strong> Attachment support</div>
+                            <div><i class="fas fa-globe"></i> <strong>HTTP:</strong> Content-Type header</div>
+                            <div><i class="fas fa-file-code"></i> <strong>Encoding:</strong> Base64, Quoted-printable</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="network-card">
+                    <div class="card-icon"><i class="fas fa-image"></i></div>
+                    <div class="card-title">
+                        <h3>Media Formats</h3>
+                        <p class="card-type">Image/Video/Audio Presentation</p>
+                    </div>
+                    <div class="card-content">
+                        <p>Presentation layer menangani format dan conversion berbagai media types. Memastikan data dapat dipresentasikan dengan benar di receiving end.</p>
+                        <div class="card-specs">
+                            <div><i class="fas fa-check-circle"></i> <strong>Image:</strong> JPEG, PNG, GIF, WebP</div>
+                            <div><i class="fas fa-check-circle"></i> <strong>Video:</strong> MP4, AVI, MKV, WebM</div>
+                            <div><i class="fas fa-check-circle"></i> <strong>Audio:</strong> MP3, AAC, FLAC, OGG</div>
+                            <div><i class="fas fa-exchange-alt"></i> <strong>Conversion:</strong> Format transformation</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- LAYER 7: Application Layer -->
+        <section id="layer7" class="layer-section">
+            <div class="layer-title">
+                <div class="layer-number">07</div>
+                <h2><i class="fas fa-laptop-code"></i> LAYER 7 - APPLICATION</h2>
+            </div>
+            <div class="cards-grid">
+                <div class="network-card">
+                    <div class="card-icon"><i class="fas fa-globe"></i></div>
+                    <div class="card-title">
+                        <h3>HTTP/HTTPS</h3>
+                        <p class="card-type">Web Protocol</p>
+                    </div>
+                    <div class="card-content">
+                        <p>HTTP (Hypertext Transfer Protocol) adalah protokol dasar World Wide Web. HTTPS menambahkan encryption layer menggunakan SSL/TLS untuk secure web browsing.</p>
+                        <div class="card-specs">
+                            <div><i class="fas fa-check-circle"></i> <strong>Port:</strong> HTTP 80, HTTPS 443</div>
+                            <div><i class="fas fa-file-code"></i> <strong>Methods:</strong> GET, POST, PUT, DELETE</div>
+                            <div><i class="fas fa-sort-numeric-up"></i> <strong>Status:</strong> 200 OK, 404 Not Found</div>
+                            <div><i class="fas fa-shield-alt"></i> <strong>Security:</strong> TLS encryption (HTTPS)</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="network-card">
+                    <div class="card-icon"><i class="fas fa-envelope"></i></div>
+                    <div class="card-title">
+                        <h3>SMTP/POP3/IMAP</h3>
+                        <p class="card-type">Email Protocols</p>
+                    </div>
+                    <div class="card-content">
+                        <p>SMTP (Simple Mail Transfer Protocol) untuk sending email, POP3 (Post Office Protocol) dan IMAP (Internet Message Access Protocol) untuk receiving email dari server.</p>
+                        <div class="card-specs">
+                            <div><i class="fas fa-check-circle"></i> <strong>SMTP:</strong> Port 25, 587 (secure)</div>
+                            <div><i class="fas fa-check-circle"></i> <strong>POP3:</strong> Port 110, 995 (secure)</div>
+                            <div><i class="fas fa-check-circle"></i> <strong>IMAP:</strong> Port 143, 993 (secure)</div>
+                            <div><i class="fas fa-sync"></i> <strong>IMAP:</strong> Server synchronization</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="network-card">
+                    <div class="card-icon"><i class="fas fa-file-download"></i></div>
+                    <div class="card-title">
+                        <h3>FTP/SFTP</h3>
+                        <p class="card-type">File Transfer Protocol</p>
+                    </div>
+                    <div class="card-content">
+                        <p>FTP digunakan untuk transfer files antara client dan server. SFTP (SSH File Transfer Protocol) adalah secure version yang mengenkripsi file transfers.</p>
+                        <div class="card-specs">
+                            <div><i class="fas fa-check-circle"></i> <strong>FTP:</strong> Port 20 (data), 21 (control)</div>
+                            <div><i class="fas fa-check-circle"></i> <strong>SFTP:</strong> Port 22 (SSH)</div>
+                            <div><i class="fas fa-shield-alt"></i> <strong>Security:</strong> SFTP encrypted</div>
+                            <div><i class="fas fa-exchange-alt"></i> <strong>Mode:</strong> Active, Passive</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="network-card">
+                    <div class="card-icon"><i class="fas fa-search"></i></div>
+                    <div class="card-title">
+                        <h3>DNS</h3>
+                        <p class="card-type">Domain Name System</p>
+                    </div>
+                    <div class="card-content">
+                        <p>DNS mentranslasikan domain names (www.example.com) ke IP addresses. Bekerja seperti phonebook Internet yang memudahkan manusia mengakses website.</p>
+                        <div class="card-specs">
+                            <div><i class="fas fa-check-circle"></i> <strong>Port:</strong> 53 (UDP/TCP)</div>
+                            <div><i class="fas fa-layer-group"></i> <strong>Records:</strong> A, AAAA, CNAME, MX, TXT</div>
+                            <div><i class="fas fa-server"></i> <strong>Hierarchy:</strong> Root, TLD, Authoritative</div>
+                            <div><i class="fas fa-clock"></i> <strong>Caching:</strong> TTL-based</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="network-card">
+                    <div class="card-icon"><i class="fas fa-network-wired"></i></div>
+                    <div class="card-title">
+                        <h3>DHCP</h3>
+                        <p class="card-type">Dynamic Host Configuration Protocol</p>
+                    </div>
+                    <div class="card-content">
+                        <p>DHCP secara otomatis mengassign IP addresses dan network configuration ke devices di jaringan. Eliminates manual configuration dan memudahkan network management.</p>
+                        <div class="card-specs">
+                            <div><i class="fas fa-check-circle"></i> <strong>Port:</strong> 67 (server), 68 (client)</div>
+                            <div><i class="fas fa-list"></i> <strong>Process:</strong> DORA (Discover, Offer, Request, ACK)</div>
+                            <div><i class="fas fa-clock"></i> <strong>Lease:</strong> Time-limited assignment</div>
+                            <div><i class="fas fa-cog"></i> <strong>Config:</strong> IP, Subnet, Gateway, DNS</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="network-card">
+                    <div class="card-icon"><i class="fas fa-terminal"></i></div>
+                    <div class="card-title">
+                        <h3>SSH</h3>
+                        <p class="card-type">Secure Shell</p>
+                    </div>
+                    <div class="card-content">
+                        <p>SSH menyediakan secure channel untuk remote command-line access ke servers. Mengenkripsi semua communication termasuk passwords dan commands.</p>
+                        <div class="card-specs">
+                            <div><i class="fas fa-check-circle"></i> <strong>Port:</strong> 22</div>
+                            <div><i class="fas fa-shield-alt"></i> <strong>Encryption:</strong> End-to-end encrypted</div>
+                            <div><i class="fas fa-key"></i> <strong>Auth:</strong> Password, Public key</div>
+                            <div><i class="fas fa-exchange-alt"></i> <strong>Features:</strong> Port forwarding, tunneling</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="network-card">
+                    <div class="card-icon"><i class="fas fa-desktop"></i></div>
+                    <div class="card-title">
+                        <h3>Telnet</h3>
+                        <p class="card-type">Remote Terminal Protocol</p>
+                    </div>
+                    <div class="card-content">
+                        <p>Telnet adalah protokol untuk remote terminal access. TIDAK secure karena mengirim data termasuk passwords dalam plaintext. Sudah largely replaced oleh SSH.</p>
+                        <div class="card-specs">
+                            <div><i class="fas fa-check-circle"></i> <strong>Port:</strong> 23</div>
+                            <div><i class="fas fa-exclamation-triangle"></i> <strong>Security:</strong> Unencrypted</div>
+                            <div><i class="fas fa-terminal"></i> <strong>Use:</strong> Remote CLI access</div>
+                            <div><i class="fas fa-times-circle"></i> <strong>Status:</strong> Deprecated for SSH</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="network-card">
+                    <div class="card-icon"><i class="fas fa-database"></i></div>
+                    <div class="card-title">
+                        <h3>SNMP</h3>
+                        <p class="card-type">Simple Network Management Protocol</p>
+                    </div>
+                    <div class="card-content">
+                        <p>SNMP digunakan untuk monitoring dan managing network devices. Collect data tentang device status, performance metrics, dan network health.</p>
+                        <div class="card-specs">
+                            <div><i class="fas fa-check-circle"></i> <strong>Port:</strong> 161 (agent), 162 (trap)</div>
+                            <div><i class="fas fa-code-branch"></i> <strong>Version:</strong> SNMPv1, v2c, v3</div>
+                            <div><i class="fas fa-chart-line"></i> <strong>MIB:</strong> Management Information Base</div>
+                            <div><i class="fas fa-bell"></i> <strong>Traps:</strong> Alerts & notifications</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="network-card">
+                    <div class="card-icon"><i class="fas fa-clock"></i></div>
+                    <div class="card-title">
+                        <h3>NTP</h3>
+                        <p class="card-type">Network Time Protocol</p>
+                    </div>
+                    <div class="card-content">
+                        <p>NTP synchronize clocks pada komputer dalam network. Penting untuk logging, security certificates, dan distributed systems yang memerlukan time consistency.</p>
+                        <div class="card-specs">
+                            <div><i class="fas fa-check-circle"></i> <strong>Port:</strong> 123 (UDP)</div>
+                            <div><i class="fas fa-layer-group"></i> <strong>Stratum:</strong> Hierarchical time sources</div>
+                            <div><i class="fas fa-crosshairs"></i> <strong>Accuracy:</strong> Millisecond precision</div>
+                            <div><i class="fas fa-satellite"></i> <strong>Source:</strong> Atomic clocks, GPS</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="network-card">
+                    <div class="card-icon"><i class="fas fa-folder-open"></i></div>
+                    <div class="card-title">
+                        <h3>SMB/CIFS</h3>
+                        <p class="card-type">File Sharing Protocol</p>
+                    </div>
+                    <div class="card-content">
+                        <p>SMB (Server Message Block) dan CIFS (Common Internet File System) digunakan untuk sharing files, printers, dan resources dalam network, terutama Windows networks.</p>
+                        <div class="card-specs">
+                            <div><i class="fas fa-check-circle"></i> <strong>Port:</strong> 445 (SMB), 139 (NetBIOS)</div>
+                            <div><i class="fas fa-desktop"></i> <strong>Platform:</strong> Windows, Linux (Samba)</div>
+                            <div><i class="fas fa-shield-alt"></i> <strong>Security:</strong> SMB3 encryption</div>
+                            <div><i class="fas fa-print"></i> <strong>Features:</strong> File & printer sharing</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="network-card">
+                    <div class="card-icon"><i class="fas fa-user-shield"></i></div>
+                    <div class="card-title">
+                        <h3>LDAP</h3>
+                        <p class="card-type">Lightweight Directory Access Protocol</p>
+                    </div>
+                    <div class="card-content">
+                        <p>LDAP adalah protokol untuk accessing dan maintaining distributed directory information services. Commonly used untuk user authentication dan organizational data.</p>
+                        <div class="card-specs">
+                            <div><i class="fas fa-check-circle"></i> <strong>Port:</strong> 389 (LDAP), 636 (LDAPS)</div>
+                            <div><i class="fas fa-tree"></i> <strong>Structure:</strong> Hierarchical tree</div>
+                            <div><i class="fas fa-users"></i> <strong>Use Case:</strong> Active Directory, OpenLDAP</div>
+                            <div><i class="fas fa-key"></i> <strong>Auth:</strong> Single sign-on (SSO)</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="network-card">
+                    <div class="card-icon"><i class="fas fa-code"></i></div>
+                    <div class="card-title">
+                        <h3>REST API</h3>
+                        <p class="card-type">Web Service Architecture</p>
+                    </div>
+                    <div class="card-content">
+                        <p>REST (Representational State Transfer) adalah architectural style untuk designing networked applications. Menggunakan HTTP methods untuk CRUD operations pada resources.</p>
+                        <div class="card-specs">
+                            <div><i class="fas fa-check-circle"></i> <strong>Protocol:</strong> HTTP/HTTPS</div>
+                            <div><i class="fas fa-file-code"></i> <strong>Format:</strong> JSON, XML</div>
+                            <div><i class="fas fa-exchange-alt"></i> <strong>Methods:</strong> GET, POST, PUT, DELETE</div>
+                            <div><i class="fas fa-chart-line"></i> <strong>Stateless:</strong> No session state</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>◢◤ TOM7 NETWORK HOLOGRAPHIC DATABASE &copysr; 2025 ◢◤</p>
+        <p style="margin-top: 15px; font-size: 0.9em;">[ ALL 7 LAYERS DOCUMENTED - SYSTEM OPERATIONAL ]</p>
+        <p style="margin-top: 10px; font-size: 0.8em; opacity: 0.7;">Physical • Data Link • Network • Transport • Session • Presentation • Application</p>
+    </footer>
+    <script src="tom7layer.js"></script>
+</body>
+</html>
